@@ -1,7 +1,7 @@
 
 body{
 	padding-top: 70px;
-	background-image: url(http://source.unsplash.com/FLHQkpxui80);
+	background-color: #111111;
 }
 
 .bottomNav, .jobHeading{
@@ -51,12 +51,13 @@ body{
 }
 
 .loginContainer{
-	width: 30%;
+	width: 350px;
 	margin:auto;
 	text-align: center;
 	background-color: white;
 	padding: 20px;
 	border-radius: 10%;
+	padding-bottom: 50px;
 }
 
 .forgotPw{
@@ -144,3 +145,10 @@ body{
 	transition: border, 0.2s;
 }
 
+#employerSearchBar, #citySearchBar{
+	display: none;
+}
+
+#inp{
+	width: 80%;
+}

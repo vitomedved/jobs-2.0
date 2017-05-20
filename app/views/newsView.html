@@ -1,48 +1,40 @@
 
 <div class="row searchRow">
 	<div class="col-sm-2 col-xs-3"></div>
-	<div class="col-sm-4 col-xs-3 searchBarCol">
-		<div class="input-group">
+	<div class="col-sm-3 col-xs-2 searchBarCol">
+		<div class="input-group" id="inp">
+		<input type="text" class="form-control " id="citySearchBar" placeholder="Pretrazi po gradu" ng-model="jobFilter.city">
+    <span class="input-group-btn">
+    <input type="text" class="form-control " id="employerSearchBar" placeholder="Pretrazi po zaposleniku" ng-model="jobFilter.employer">
+        <span class="input-group-btn">
 	      	<input type="text" class="form-control" placeholder="Pretrazi..." ng-model="jobFilter.name">
-	      	<span class="input-group-btn">
-	        <button class="btn btn-default searchBtn" type="button"><i class="fa fa-search" aria-hidden="true"></i> Pretrazi</button>
-	      	</span>
+	      	
+
 	    </div><!-- /input-group -->
 
 	</div>
-    <input type="text" class="form-control 2"  placeholder="Pretrazi..." ng-model="jobFilter.city">
-    <span class="input-group-btn">
-    <input type="text" class="form-control 3" placeholder="Pretrazi..." ng-model="jobFilter.employer">
-        <span class="input-group-btn">
                 
-	<div class="col-sm-4 col-xs-3 searchCol">
+	<div class="col-sm-5 col-xs-4 searchCol">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-12">
+
 					<div class="dropdown inline">
-		  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<div class="btn-group">
+		  			<button class="btn btn-default dropdown-toggle kriterij" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 		    			Odaberite kriterij pretrage
 		    			<span class="caret"></span>
 		  			</button>
-				  <ul class="dropdown-menu inline" aria-labelledby="dropdownMenu1" ng-click="areafil.city">
-				    <li><a href="#" ng-click="">Ime posla</a></li>
-				    <li><a href="#" ng-click="areafil(Split)">Mjesto</a></li>
-				    <li><a href="#" ng-click="areafil(Rijeka)">Poslodavac</a></li>
-				  </ul>
+		  			
+				  	<ul class="dropdown-menu inline" aria-labelledby="dropdownMenu1" ng-click="areafil.city">
+					    <li class="imePosla"><a href="#" ng-click="">Ime posla</a></li>
+					    <li><a href="#" ng-click="areafil(Split)">Mjesto</a></li>
+					    <li><a href="#" ng-click="areafil(Rijeka)">Poslodavac</a></li>
+				  	</ul>
+					</div>
+	        		<button class="btn btn-default searchBtn" type="button"><i class="fa fa-search" aria-hidden="true"></i> Pretrazi</button>
 					</div>
 				</div>
-				<div class="col-xs-6">
-<div class="dropdown inline">
-	  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-	    			Odaberite kategoriju
-	    			<span class="caret"></span>
-	  			</button>
-			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-			    <li><a href="#">IT</a></li>
-			    <li><a href="#">Menadžment</a></li>
-			    <li><a href="#">Fizički poslovi</a></li>
-			  </ul>
-			</div>
-				</div>
+				
 			</div>
 			
 	</div>
@@ -109,3 +101,4 @@
 </nav>
 
 
+<script type="text/javascript" src="hideSearch.js"></script>
