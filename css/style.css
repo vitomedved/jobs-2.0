@@ -78,3 +78,9 @@ body{
 	padding: 10px;
 	margin: 10px;
 }
+
+.kvadrat{
+	width: 50%;
+	height: 40px;
+	background-color: blue;
+}

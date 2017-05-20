@@ -23,6 +23,7 @@ $(".kvadrat").on('click', function() {
 				kLozinka: pw,
 				kEmail: email
 			});
+		alert("Uspješno ste registrirani");
 		return;
 	}else{
 		for(var i = 0; i < users.length; i++){
@@ -35,9 +36,11 @@ $(".kvadrat").on('click', function() {
 			}
 		}
 	}
+	alert("Uspješno ste registrirani");
 	users.push({
 				kIme: username,
 				kLozinka: pw,
 				kEmail: email
 			});
+
 });
