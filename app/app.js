@@ -20,6 +20,10 @@
                 controller: 'js/login.js',
                 templateUrl: 'app/views/login.html'
         })
+            .when('/register', {
+                controller: 'js/register.js',
+                templateUrl: 'register.html'
+            })
             .otherwise( { redirectTo: '/' } );
     });
     
