@@ -1,6 +1,7 @@
 
 body{
 	padding-top: 70px;
+	background-image: url(http://source.unsplash.com/FLHQkpxui80);
 }
 
 .bottomNav, .jobHeading{
@@ -53,6 +54,9 @@ body{
 	width: 30%;
 	margin:auto;
 	text-align: center;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10%;
 }
 
 .forgotPw{
@@ -139,3 +143,4 @@ body{
 	color: black;
 	transition: border, 0.2s;
 }
+
