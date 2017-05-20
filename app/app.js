@@ -17,7 +17,7 @@
                 templateUrl: 'app/views/profil.html'
             })
             .when('/login', {
-                controller: 'loginController',
+                controller: 'js/login.js',
                 templateUrl: 'app/views/login.html'
         })
             .otherwise( { redirectTo: '/' } );
