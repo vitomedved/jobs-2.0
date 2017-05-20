@@ -3,13 +3,8 @@ body{
 	padding-top: 70px;
 }
 
-.bottomNav{
+.bottomNav, .jobHeading{
 	text-align: center;
-}
-
-.jobHeading{
-	text-align: center;
-	
 }
 
 .jobRow{
@@ -83,4 +78,64 @@ body{
 	width: 50%;
 	height: 40px;
 	background-color: blue;
+}
+
+.active{
+	border-bottom: 4px solid grey;
+	color: grey;
+	transition: border, 0.2s;
+}
+
+#red:hover{
+	border-bottom: 4px solid red;
+	color: red;
+	transition: border, 0.2s;
+}
+
+#orange:hover{
+	border-bottom: 4px solid orange;
+	color: orange;
+	transition: border, 0.2s;
+}
+
+#blue:hover{
+	border-bottom: 4px solid blue;
+	color: blue;
+	transition: border, 0.2s;
+}
+
+#yellow:hover{
+	border-bottom: 4px solid yellow;
+	color: yellow;
+	transition: border, 0.2s;
+}
+
+#green:hover, #green:focus{
+	border-bottom: 4px solid green;
+	color: green;
+	transition: border, 0.2s;
+}
+
+#purple{
+	border-left: 3px solid purple;
+	color: purple;
+	transition: border, 0.2s;
+}
+
+#purple:hover{
+	border-left: 10px solid purple;
+	color: purple;
+	transition: border, 0.2s;
+}
+
+#black{
+	border-left: 3px solid black;
+	color: black;
+	transition: border, 0.2s;
+}
+
+#black:hover{
+	border-left: 10px solid black;
+	color: black;
+	transition: border, 0.2s;
 }
