@@ -1,0 +1,111 @@
+
+<div class="row searchRow">
+	<div class="col-sm-2 col-xs-3"></div>
+	<div class="col-sm-4 col-xs-3 searchBarCol">
+		<div class="input-group">
+	      	<input type="text" class="form-control" placeholder="Pretrazi..." ng-model="jobFilter.name">
+	      	<span class="input-group-btn">
+	        <button class="btn btn-default searchBtn" type="button"><i class="fa fa-search" aria-hidden="true"></i> Pretrazi</button>
+	      	</span>
+	    </div><!-- /input-group -->
+
+	</div>
+    <input type="text" class="form-control 2"  placeholder="Pretrazi..." ng-model="jobFilter.city">
+    <span class="input-group-btn">
+    <input type="text" class="form-control 3" placeholder="Pretrazi..." ng-model="jobFilter.employer">
+        <span class="input-group-btn">
+                
+	<div class="col-sm-4 col-xs-3 searchCol">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="dropdown inline">
+		  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		    			Odaberite kriterij pretrage
+		    			<span class="caret"></span>
+		  			</button>
+				  <ul class="dropdown-menu inline" aria-labelledby="dropdownMenu1" ng-click="areafil.city">
+				    <li><a href="#" ng-click="">Ime posla</a></li>
+				    <li><a href="#" ng-click="areafil(Split)">Mjesto</a></li>
+				    <li><a href="#" ng-click="areafil(Rijeka)">Poslodavac</a></li>
+				  </ul>
+					</div>
+				</div>
+				<div class="col-xs-6">
+<div class="dropdown inline">
+	  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    			Odaberite kategoriju
+	    			<span class="caret"></span>
+	  			</button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			    <li><a href="#">IT</a></li>
+			    <li><a href="#">Menadžment</a></li>
+			    <li><a href="#">Fizički poslovi</a></li>
+			  </ul>
+			</div>
+				</div>
+			</div>
+			
+	</div>
+</div>
+
+
+	<div class="col-sm-2 col-xs-3"></div>
+<br /><br />
+<table>
+    <tr>
+        <th ng-click="doSort('name')">Naziv Posla</th>
+        <th ng-click="doSort('published')">Postavljeno dana</th>
+        <th ng-click="doSort('deadline')">Rok za prijavu</th>
+        <th ng-click="doSort('city')">Mjesto rada</th>
+        <th ng-click="doSort('employer')">Employer</th>
+    </tr>
+</table>
+<br />
+<span>Total jobs: {{ jobs.length }}</span>
+
+    <div ng-repeat="blow in jobs | filter:jobFilter | orderBy:sortBy:reverse">
+<div class="row jobRow">
+
+	<div class="col-sm-2 col-xs-1 margCol"></div> <!--margin col-->
+    
+	<div class="col-sm-1 col-xs-5 iconCol jobRow">
+		<i class="fa fa-battery-3" id="jobIcon" aria-hidden="true" ></i>
+	</div >
+	<div class="col-sm-7 col-xs-5 descCol jobRow" >
+			<h2 class="jobHeading"><span class="label label-primary jobName">{{ blow.name }}</span></h2>
+			<p class="jobDesc1">
+				<span class="jobPublishedH"><em>Oglas objavljen: </em></span> <span class="jobPublished"> {{ blow.published }}</span>
+				<span class="jobDeadlineH"><em>oglas ističe: </em></span> <span class="jobDeadline">{{ blow.deadline }}</span>
+				<span class="employerNameH"><em>ime poslodavca: </em></span> <span class="employerName">{{ blow.employer }}</span>
+				<span class="cityH"><em>grad: </em></span><span>{{ blow.city }}</span>
+			</p>
+			<p class="jobDesc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+    
+
+	<div class="col-sm-2 col-xs-1 margCol jobRow"></div> <!--margin col-->
+    </div>
+</div>
+        
+<nav aria-label="Page navigation" class="bottomNav">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+

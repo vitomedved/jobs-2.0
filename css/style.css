@@ -1,7 +1,6 @@
 
 body{
 	padding-top: 70px;
-	display: none;
 }
 
 .bottomNav{
@@ -78,35 +77,4 @@ body{
 .chck{
 	padding: 10px;
 	margin: 10px;
-}
-
-.kvadrat{
-	width: 50px;
-	height: 50px;
-	background-color: black;
-}
-
-a.return{
-	color: black;
-	text-decoration: inherit;
-	border: none;
-}
-
-a.return:hover{
-	text-decoration: none;
-	color: black;
-}
-
-.navbar-default .navbar-nav>.active>a.active{
-	background-color: red;
-}
-
-
-.navbar-default .navbar-nav>.active>a #oglasi{
-	background-color: orange;
-	color: white;
-}
-.navbar-default .navbar-nav>li>a#oglasi:hover, .navbar-default .navbar-nav>li>a.active{
-	background-color: orange;
-	color: white;
 }

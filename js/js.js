@@ -1,5 +1,5 @@
 $(function() {
-	$("body").fadeIn("700", function() {
+	$("body").fadeIn("500", function() {
 		console.log("loaded");
 	});
 });
