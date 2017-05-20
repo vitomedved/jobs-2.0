@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobs 2.0</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-default nav-fixed-top navbar-fixed-top">
+  <div class="container-fluid">
+
+<div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">P <i class="fa fa-briefcase" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Poslovi <span class="sr-only">(current)</span></a></li>
+        <li ><a id="oglasi" href="predajOglas.html">Predaj oglas</a></li>
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html">Prijavi se</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Račun <i class="userIcon"></i><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="profile.html" id="button1">Profil</a></li>
+            <li><a href="#" id="button2">Životopis</a></li>
+            <li><a href="#">Spremljeno</a></li>
+            <li><a href="#">Poruke</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Odjavi se</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+    </div>
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row searchRow">
+	<div class="col-sm-2 col-xs-3"></div>
+	<div class="col-sm-4 col-xs-3 searchBarCol">
+		<div class="input-group">
+	      	<input type="text" class="form-control" placeholder="Pretrazi...">
+	      	<span class="input-group-btn">
+	        <button class="btn btn-default searchBtn" type="button"><i class="fa fa-search" aria-hidden="true"></i> Pretrazi</button>
+	      	</span>
+	    </div><!-- /input-group -->
+
+	</div>
+	<div class="col-sm-4 col-xs-3 searchCol">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="dropdown inline">
+		  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		    			Odaberite regiju
+		    			<span class="caret"></span>
+		  			</button>
+				  <ul class="dropdown-menu inline" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">SZ</a></li>
+				    <li><a href="#">S</a></li>
+				    <li><a href="#">I</a></li>
+				  </ul>
+					</div>
+				</div>
+				<div class="col-xs-6">
+			<div class="dropdown inline">
+	  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    			Odaberite kategoriju
+	    			<span class="caret"></span>
+	  			</button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			    <li><a href="#">IT</a></li>
+			    <li><a href="#">Menadžment</a></li>
+			    <li><a href="#">Fizički poslovi</a></li>
+			  </ul>
+			</div>
+				</div>
+			</div>
+			
+	</div>
+
+	</div>
+
+
+	<div class="col-sm-2 col-xs-3"></div>
+</div>
+
+
+
+<div class="row jobRow">
+	<div class="col-sm-2 col-xs-1 margCol"></div> <!--margin col-->
+
+	<div class="col-sm-1 col-xs-5 iconCol jobRow">
+		<i class="fa fa-battery-3" id="jobIcon" aria-hidden="true"></i>
+	</div>
+	<div class="col-sm-7 col-xs-5 descCol jobRow">
+			<h2 class="jobHeading"><span class="label label-primary jobName">Ime posla123</span></h2>
+			<p class="jobDesc1">
+				<span class="jobPublishedH"><em>Oglas objavljen: </em></span> <span class="jobPublished"> 10/1/2231,</span>
+				<span class="jobDeadlineH"><em>oglas ističe: </em></span> <span class="jobDeadline">11/1/2231,</span>
+				<span class="employerNameH"><em>ime poslodavca: </em></span> <span class="employerName">Gjuro,</span>
+				<span class="cityH"><em>grad: </em></span><span>Zagreb</span>
+			</p>
+			<p class="jobDesc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+
+	<div class="col-sm-2 col-xs-1 margCol jobRow"></div> <!--margin col-->
+</div>
+
+
+
+
+
+
+<nav aria-label="Page navigation" class="bottomNav">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<script type="text/javascript" scr="hashes.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+body{
+	padding-top: 70px;
+	display: none;
+}
+
+.bottomNav{
+	text-align: center;
+}
+
+.jobHeading{
+	text-align: center;
+	
+}
+
+.jobRow{
+	padding-bottom: 10px;
+	position: relative;
+	margin-top: 0.5%;
+}
+
+.iconCol{
+	background-color: white;
+	position: absolute;
+	text-align: center;
+	 vertical-align: baseline;
+}
+
+.descCol{
+	background-color: #ffafaf;
+}
+
+#jobName{
+	width: 60%;
+}
+
+.fa-battery-3:before, .fa-battery-three-quarters:before{
+	 font-size: 3em;
+	 width: 3em;
+	 height: 3em;
+}
+
+.userIcon{
+	height: 50px;
+	width: 50px;
+	background-image: url(http://source.unsplash.com/QwptYsWXJqo);
+	background-size: 50px;
+}
+.jobDesc1{
+	padding-top: 10px;
+	text-align: center;
+}
+
+.input-group{
+	margin-bottom: 10px;
+}
+
+.loginContainer{
+	width: 30%;
+	margin:auto;
+	text-align: center;
+}
+
+.forgotPw{
+	text-decoration: underline;
+}
+
+.register{
+	margin: auto;
+	width: 50%;
+}
+
+.userImg{
+	width: 80%;
+	height: 80%;
+}
+
+.chck{
+	padding: 10px;
+	margin: 10px;
+}
+
+.kvadrat{
+	width: 50px;
+	height: 50px;
+	background-color: black;
+}
+
+a.return{
+	color: black;
+	text-decoration: inherit;
+	border: none;
+}
+
+a.return:hover{
+	text-decoration: none;
+	color: black;
+}
+
+.navbar-default .navbar-nav>.active>a.active{
+	background-color: red;
+}
+
+
+.navbar-default .navbar-nav>.active>a #oglasi{
+	background-color: orange;
+	color: white;
+}
+.navbar-default .navbar-nav>li>a#oglasi:hover, .navbar-default .navbar-nav>li>a.active{
+	background-color: orange;
+	color: white;
+}
